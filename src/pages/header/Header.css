@@ -1,0 +1,43 @@
+.headerBackground{
+    width: 100vw;
+    height: 100px;
+    position: absolute;
+    top: 0px;
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    height: 80px;
+    width: 115px;
+    position: relative;
+    left: 100px;
+}
+
+.projectButton{
+    height: 40px;
+    position: relative;
+    right: 140px;
+    background-color: white;
+    border: none;
+    border-radius: 5px;
+    width: 150px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.projectButton:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+.shadow{
+    height: 40px;
+    width: 100vw;
+    box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0);
+}

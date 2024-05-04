@@ -1,0 +1,37 @@
+.endText{
+    font-size: 40px;
+    font-family: "Abel", sans-serif;
+}
+
+.leftTri{
+    width: 0;  
+    height: 0;  
+    border-left: 75px solid transparent; 
+    border-right: 75px solid transparent; 
+      
+    border-bottom: 75px solid #c5c6c7; 
+    rotate: -135deg;
+
+    position: relative;
+    top: -96px;
+    left: -180px;
+
+    margin: 2rem; 
+}
+
+
+.rightTri{
+    width: 0;  
+    height: 0;  
+    border-left: 75px solid transparent; 
+    border-right: 75px solid transparent; 
+      
+    border-bottom: 75px solid #c5c6c7; 
+    rotate: 135deg;
+
+    position: relative;
+    top: -96px;
+    left: 180px;
+
+    margin: 2rem;
+}

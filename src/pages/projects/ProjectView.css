@@ -1,0 +1,191 @@
+
+
+
+.box{
+    width: 400px;
+    height: 300px;
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.box {
+    /* Clean style */
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    appearance: none;
+    border: none;
+    background: none;
+    padding: 0;
+    color: var(--button-text-color);
+    cursor: pointer;
+    /* Clean style */
+    
+    --button-text-color: var(--background-color);
+    --button-text-color-hover: var(--button-background-color);
+    --border-color: black;
+    --button-background-color: white;
+    --highlight-color: #ff4655;
+    --button-inner-border-color: transparent;
+    --button-bits-color: var(--background-color);
+    --button-bits-color-hover: var(--button-background-color);
+    
+    position: relative;
+    padding: 8px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 14px;
+    transition: all .15s ease;
+  }
+  
+  .box::before,
+  .box::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0; left: 0;
+    height: calc(50% - 5px);
+    border: 1px solid var(--border-color);
+    transition: all .15s ease;
+  }
+  
+  .box::before {
+    top: 0;
+    border-bottom-width: 0;
+  }
+  
+  .box::after {
+    bottom: 0;
+    border-top-width: 0;
+  }
+  
+  .box:active,
+  .box:focus {
+    outline: none;
+  }
+  
+  .box:active::before,
+  .box:active::after {
+    right: 3px;
+    left: 3px;
+  }
+  
+  .box:active::before {
+    top: 3px;
+  }
+  
+  .box:active::after {
+    bottom: 3px;
+  }
+
+
+
+/* ------------------------------- */
+
+.box__inner {
+    position: relative;
+    display: block;
+    /* padding: 20px 30px; */
+    top: -240px;
+    background-color: var(--button-background-color);
+    z-index: -1;
+    overflow: hidden;
+    height: 280px;
+    box-shadow: inset 0px 0px 0px 1px var(--button-inner-border-color);
+  }
+  
+  .box__inner::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0; left: 0;
+    width: 2px;
+    height: 20px;
+    background-color: var(--button-bits-color);
+  }
+  
+  .box__inner::after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0; bottom: 0;
+    width: 4px;
+    height: 20px;
+    background-color: var(--button-bits-color);
+    transition: all .2s ease;
+    
+  }
+
+
+
+/* ------------------------------- */
+
+  .box__slide {
+    display: block;
+    position: absolute;
+    top: 0; 
+    bottom: -1px; 
+    left: -8px;
+    width: 0;
+    /* height: 200px; */
+    background-color: var(--highlight-color);
+    transform: skew(-15deg);
+    transition: all .2s ease;
+    z-index: -1;
+  }
+
+/* ------------------------------- */
+
+
+
+  /* ------------------------------- */
+
+.box:hover {
+    color: var(--button-text-color-hover);
+    
+
+  }
+  
+  .box:hover .box__slide {
+    width: calc(100% + 15px);
+    
+  }
+  
+  .box:hover .box__inner::after {
+    background-color: var(--button-bits-color-hover);
+    
+  }
+
+
+  .cardBox{
+   
+    display: flex;
+    flex-direction: row;
+  }
+
+  .surroundBox{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+.replicationTitle{
+  position: absolute;
+  top: 150px;
+  font-family: "Abel", sans-serif;
+}
+
+.responsiveTitle{
+  font-family: "Abel", sans-serif;
+}
+
+.calculatorTitle{
+  font-family: "Abel", sans-serif;
+}
+
+
+
+
+
+

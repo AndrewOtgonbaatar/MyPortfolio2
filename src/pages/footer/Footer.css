@@ -1,0 +1,37 @@
+.aboutText{
+    font-family: "Abel", sans-serif;
+}
+
+.tri1{
+    width: 0;  
+    height: 0;  
+    border-left: 55px solid transparent; 
+    border-right: 55px solid transparent; 
+      
+    border-bottom: 55px solid black; 
+    rotate: -135deg;
+
+    position: relative;
+    top: -78px;
+    left: -68px;
+    
+
+    margin: 2rem; 
+}
+
+.tri2{
+    width: 0;  
+    height: 0;  
+    border-left: 55px solid transparent; 
+    border-right: 55px solid transparent; 
+      
+    border-bottom: 55px solid black; 
+    rotate: 135deg;
+
+    position: absolute;
+    top: -78px;
+    right: -68px;
+    
+
+    margin: 2rem; 
+}
