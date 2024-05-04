@@ -12,7 +12,9 @@ export const Footer = () => {
         backgroundColor: "black",
       }}
     >
-      <div className="tri1"></div>
+      <div className="tri1">
+        <d />
+      </div>
       <div className="tri2"></div>
       <div
         style={{
