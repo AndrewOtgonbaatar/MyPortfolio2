@@ -36,13 +36,14 @@ export const Footer = () => {
           left: "100px",
         }}
       >
-        I'm currently 15 years of age and I'm currently enrolled at Adlai E
-        Stevenson High School, freshman year. I've been taking the Pinecone
-        coding course for about a year now and I dub this my "personal"
-        portfolio. I've taken a mini course that was about a few weeks then took
-        a summer course in Evanstan for a few months and took the current course
-        since August, I think. If you click the button, you'll be re-routed to
-        all my projects I've done since the mini-course. Enjoy!{" "}
+        I'm currently 15 years of age -- going on 16 -- and I'm currently
+        enrolled at Adlai E Stevenson High School, going to my sophmore year.
+        I've been taking the Pinecone coding course for about a year now and I
+        dub this my "personal" portfolio. I've taken a mini course that was
+        about a few weeks then took a summer course in Evanstan for a few months
+        and took the current course since August, I think. If you click the
+        button, you'll be re-routed to all my projects I've done since the
+        mini-course. Enjoy!{" "}
       </p>
     </div>
   );
